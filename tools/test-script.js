@@ -21,9 +21,12 @@ class FakeSheet {
     return proxy({
       setValues(vals) { vals.forEach((row, i) => row.forEach((v, j) => { (sheet.rows[r - 1 + i] = sheet.rows[r - 1 + i] || [])[c - 1 + j] = v; })); return proxy(); },
       setValue(v) { (sheet.rows[r - 1] = sheet.rows[r - 1] || [])[c - 1] = v; return proxy(); },
+      getValues() { return Array.from({ length: nr }, (_, i) => Array.from({ length: nc }, (_, j) => { const v = (sheet.rows[r - 1 + i] || [])[c - 1 + j]; return v === undefined ? '' : v; })); },
     });
   }
   appendRow(row) { this.rows.push(row); }
+  getLastColumn() { return Math.max(0, ...this.rows.map(x => (x || []).length)); }
+  insertColumnAfter(n) { this.rows.forEach(r => r && r.splice(n, 0, '')); }
   getDataRange() { const rows = this.rows; return { getDisplayValues: () => { const w = Math.max(0, ...rows.map(x => (x || []).length)); return rows.filter(Boolean).map(r => Array.from({ length: w }, (_, i) => { const v = r[i]; return v === undefined || v === null ? '' : v === true ? 'TRUE' : v === false ? 'FALSE' : v instanceof Date ? v.toISOString() : String(v); })); } }; }
   getLastRow() { return this.rows.length; }
   setFrozenRows() {} setRowHeight() {} setColumnWidth() {} getName() { return this.name; }
@@ -103,16 +106,23 @@ check('problem finder runs', Array.isArray(ctx.findProblems_()));
 // contact form
 check('valid message is sent', post({ email: 'a@b.ch', message: 'Hello', page: 'Team' }).ok === true && sent.length === 1);
 check('email goes to the club', sent[0].to === 'temasekclub.ch@gmail.com' && sent[0].replyTo === 'a@b.ch');
-check('message is logged in the sheet', sheets['Messages'].rows.length === 2 && sheets['Messages'].rows[1][4] === 'Sent');
+const mcol = name => sheets['Messages'].rows[0].indexOf(name);
+check('message is logged in the sheet', sheets['Messages'].rows.length === 2 && sheets['Messages'].rows[1][mcol('Status')] === 'Sent');
+check('the Messages tab has a Topic column after Email', mcol('Topic') === mcol('Email') + 1);
+const topical = post({ email: 'c@d.ch', topic: 'Volunteering\nBcc: x@y.z', message: 'Count me in', page: 'Home' });
+check('a topic becomes the email subject (line breaks removed)', topical.ok === true && sent[sent.length - 1].subject === '[TCS website] Volunteering Bcc: x@y.z');
+check('the topic is logged next to the email', sheets['Messages'].rows.slice(-1)[0][mcol('Topic')] === 'Volunteering Bcc: x@y.z');
+check('a message without a topic still works', post({ email: 'e@f.ch', message: 'No topic' }).ok === true && /Website message/.test(sent[sent.length - 1].subject));
 check('bad email is rejected', post({ email: 'nope', message: 'x' }).ok === false);
 check('empty message is rejected', post({ email: 'a@b.ch', message: '  ' }).ok === false);
 check('huge message is rejected', post({ email: 'a@b.ch', message: 'x'.repeat(3001) }).ok === false);
-check('honeypot is silently ignored', post({ email: 'a@b.ch', message: 'spam', company: 'Bot Inc' }).ok === true && sent.length === 1);
+const mailsBefore = sent.length;
+check('honeypot is silently ignored', post({ email: 'a@b.ch', message: 'spam', company: 'Bot Inc' }).ok === true && sent.length === mailsBefore);
 post({ email: 'rate@b.ch', message: '1' }); post({ email: 'rate@b.ch', message: '2' }); post({ email: 'rate@b.ch', message: '3' });
 check('rate limit stops the 4th message in an hour', post({ email: 'rate@b.ch', message: '4' }).ok === false);
 ctx.__failMail = true;
 const failed = post({ email: 'fail@b.ch', message: 'x' });
-check('failed email is reported and still logged', failed.ok === false && /EMAIL FAILED/.test(sheets['Messages'].rows.slice(-1)[0][4]));
+check('failed email is reported and still logged', failed.ok === false && /EMAIL FAILED/.test(sheets['Messages'].rows.slice(-1)[0][mcol('Status')]));
 ctx.__failMail = false;
 check('unknown action is refused', get({ action: 'nope' }).ok === false);
 

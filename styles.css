@@ -617,7 +617,7 @@ strong { font-weight: 600; }
   padding: 12px 16px;
 }
 .field input { height: 50px; }
-.field textarea { height: 259px; resize: none; }
+.field textarea { height: 159px; resize: none; }   /* 259px before the Topic field was added: the card keeps its size */
 /* focused field: the border sits right on the field's edge, in the same light yellow as the inactive event chips */
 .field input:focus,
 .field textarea:focus,
@@ -1599,3 +1599,18 @@ html, body, a, button, summary, .btn, .year, .chip, .nav__link { cursor: var(--c
 }
 @keyframes page-spin { to { transform: rotate(360deg); } }
 @keyframes page-pulse { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+
+/* after a message is sent the button says "Sent!" for a few seconds, in the pale yellow of the site's chips */
+.join__send--sent, .join__send--sent:disabled { background: var(--color-yellow-light); color: var(--color-text); opacity: 1; cursor: default; }
+.join__send { white-space: nowrap; }
+
+/* a hidden (screen-reader only) status line must not take part in the form's layout, or the card would grow when it is added */
+.join__panel > .sr-only { position: absolute; left: 0; top: 0; }
+
+/* "Sending…" / "Sent!" / "Send": the colour eases over, and the words appear letter by letter from left to right */
+.join__send { transition: background-color 0.9s ease, color 0.9s ease; }
+.join__send--sent { transition-duration: 0.5s; }                  /* turning yellow is a little quicker than easing back to grey */
+.join__send-words { display: inline-flex; }
+.join__send-char { display: inline-block; white-space: pre; animation: send-char-in 0.4s ease-out var(--d, 0ms) both; }
+@keyframes send-char-in { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .join__send { transition: none; } .join__send-char { animation: none; } }

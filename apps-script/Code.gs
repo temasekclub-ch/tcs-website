@@ -184,7 +184,7 @@ const SETTINGS_SPEC = {
   ],
 };
 
-const MESSAGES_HEADERS = ['Time', 'Page', 'Email', 'Message', 'Status'];
+const MESSAGES_HEADERS = ['Time', 'Page', 'Email', 'Topic', 'Message', 'Status'];
 
 /* ------------------------------------------------------------------ */
 /* Web app entry points                                                */
@@ -358,6 +358,7 @@ function handleContact_(b) {
 
   const email = String(b.email || '').trim();
   const message = String(b.message || '').trim();
+  const topic = String(b.topic || '').replace(/[\r\n\t]+/g, ' ').trim().slice(0, 120);   // one short line; line breaks removed so it is safe in an email subject
   const page = String(b.page || '').trim().slice(0, 120) || 'Website';
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 200) return { ok: false, error: 'Please enter a valid email address.' };
   if (!message) return { ok: false, error: 'Please write a message.' };
@@ -371,14 +372,14 @@ function handleContact_(b) {
       to: CONFIG.RECIPIENT,
       replyTo: email,
       name: 'TCS website',
-      subject: 'Website message (' + page + ')',
+      subject: topic ? '[TCS website] ' + topic : 'Website message (' + page + ')',
       body: 'A message was sent from the Temasek Club Switzerland website.\n\n' +
-            'Page: ' + page + '\nFrom: ' + email + '\n\n' + message + '\n',
+            'Page: ' + page + '\nFrom: ' + email + '\n' + (topic ? 'Topic: ' + topic + '\n' : '') + '\n' + message + '\n',
     });
   } catch (err) {
     status = 'EMAIL FAILED: ' + String(err && err.message || err);
   }
-  logMessage_([new Date(), page, email, message, status]);
+  logMessage_({ time: new Date(), page: page, email: email, topic: topic, message: message, status: status });
   if (status !== 'Sent') return { ok: false, error: 'Sorry, the message could not be sent. Please email ' + CONFIG.RECIPIENT + ' directly.' };
   return { ok: true };
 }
@@ -398,11 +399,19 @@ function rateLimited_(email) {
   } finally { try { lock.releaseLock(); } catch (e) { /* not held */ } }
 }
 
-function logMessage_(row) {
+function logMessage_(entry) {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   let sh = ss.getSheetByName('Messages');
   if (!sh) { sh = ss.insertSheet('Messages'); sh.appendRow(MESSAGES_HEADERS); }
-  sh.appendRow(row);
+  let headers = sh.getRange(1, 1, 1, Math.max(1, sh.getLastColumn())).getValues()[0].map(normKey_);
+  if (headers.indexOf('topic') < 0) {                      // a Messages tab made before the Topic field existed: add the column after Email
+    const at = Math.max(0, headers.indexOf('email')) + 1;
+    sh.insertColumnAfter(at);
+    sh.getRange(1, at + 1).setValue('Topic').setFontWeight('bold').setBackground('#e6dc94');
+    headers = sh.getRange(1, 1, 1, sh.getLastColumn()).getValues()[0].map(normKey_);
+  }
+  // each value goes under its own heading, so the columns can be moved around without breaking anything
+  sh.appendRow(headers.map(function (h) { return entry[h] === undefined ? '' : entry[h]; }));
 }
 
 /* ------------------------------------------------------------------ */
