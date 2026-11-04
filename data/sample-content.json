@@ -1,0 +1,469 @@
+{
+  "ok": true,
+  "generated": "2026-10-26T15:22:10.327Z",
+  "data": {
+    "team": [
+      {
+        "name": "Sophia Kay Leen Iten",
+        "role": "President",
+        "photo": "assets/team/sophia-iten.png",
+        "status": "Current"
+      },
+      {
+        "name": "Sumathi V Selvaretnam",
+        "role": "President (2018–2023)\nCommunity Lead (2024)",
+        "photo": "assets/team/sumathi-selvaretnam.jpeg",
+        "status": "Past"
+      },
+      {
+        "name": "Ethel Hui Yan Tan",
+        "role": "Vice President",
+        "photo": "assets/team/ethel-tan.png",
+        "status": "Current"
+      },
+      {
+        "name": "Denise Lim",
+        "role": "Education Lead (2022–2023)\nVice President (2023–2024)",
+        "photo": "assets/team/denise-lim.jpeg",
+        "status": "Past"
+      },
+      {
+        "name": "Evelyn Foo-Ogulkanmis",
+        "role": "Communications Lead",
+        "photo": "assets/team/evelyn-foo.png",
+        "status": "Current"
+      },
+      {
+        "name": "Mun How Mong (Shaun)",
+        "role": "President (2023–2025)",
+        "photo": "assets/team/shaun-mong.jpeg",
+        "status": "Past"
+      },
+      {
+        "name": "Sebastian Ong",
+        "role": "Community Lead (Zurich)",
+        "photo": "assets/team/sebastian-ong.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Zi Xuan Ng",
+        "role": "Education Lead (2022–2023)\nVice President (2023–2025)",
+        "photo": "assets/team/zixuan-ng.jpeg",
+        "status": "Past"
+      },
+      {
+        "name": "Bobby Wei Jian Chin",
+        "role": "Community Lead (Basel)",
+        "photo": "assets/team/bobby-chin.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Lingxi Tang",
+        "role": "Education Lead (East)",
+        "photo": "assets/team/lingxi-tang.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Neha Thakkar",
+        "role": "Professional Lead",
+        "photo": "assets/team/neha-thakkar.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Celine Yu Ting Chew",
+        "role": "Community Lead (Geneva)",
+        "photo": "assets/team/celine-chew.jpg",
+        "status": "Current"
+      },
+      {
+        "name": "James Winston Tumbokon",
+        "role": "Education Lead (West)",
+        "photo": "assets/team/james-tumbokon.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Audrey Au Yong Lyn",
+        "role": "International Organisations Lead",
+        "photo": "assets/team/audrey-lyn.jpeg",
+        "status": "Current"
+      },
+      {
+        "name": "Amanda Yen Yi Ng",
+        "role": "Treasurer",
+        "photo": "assets/team/amanda-ng.png",
+        "status": "Current"
+      }
+    ],
+    "sponsors": [
+      {
+        "name": "Company",
+        "description": "Asian groceries, delivered",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      },
+      {
+        "name": "Company",
+        "description": "Catering for events",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      },
+      {
+        "name": "Company",
+        "description": "Travel and flight deals",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      },
+      {
+        "name": "Company",
+        "description": "Wealth advisory services",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      },
+      {
+        "name": "Company",
+        "description": "Printing and signage",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      },
+      {
+        "name": "Company",
+        "description": "Local coffee roasters",
+        "logo": "assets/logo-pending.png",
+        "status": "Current"
+      }
+    ],
+    "businesses": [
+      {
+        "name": "Pandan Treasures",
+        "category": "Baked Goods",
+        "logo": "assets/pandan-treasures.png",
+        "instagram": "",
+        "facebook": "",
+        "linkedin": "",
+        "whatsapp": "",
+        "website": ""
+      },
+      {
+        "name": "Pandan Treasures",
+        "category": "Baked Goods",
+        "logo": "assets/pandan-treasures.png",
+        "instagram": "",
+        "facebook": "",
+        "linkedin": "",
+        "whatsapp": "",
+        "website": ""
+      }
+    ],
+    "events": [
+      {
+        "date": "TBD",
+        "title": "60th National Day Lunch",
+        "tag": "Community",
+        "emoji": "🤝🏻",
+        "location": "3 locations: Basel, Zug, and Zurich",
+        "details": "Lunch, games, and fun"
+      }
+    ],
+    "pastEvents": [
+      {
+        "year": "2025",
+        "date": "21 & 25 Dec",
+        "title": "Christmas Lunch",
+        "tag": "Community",
+        "emoji": "🤝🏻",
+        "minutes": "https://singaporeans.ch/wp-content/uploads/2025/05/agm2025_final_v2.pdf",
+        "minutesLabel": "Download meeting minutes"
+      },
+      {
+        "year": "2025",
+        "date": "12 Oct",
+        "title": "Uri Hike",
+        "tag": "Community",
+        "emoji": "🤝🏻",
+        "minutes": "",
+        "minutesLabel": ""
+      },
+      {
+        "year": "2025",
+        "date": "20 Sept",
+        "title": "TCS Student & Young Professionals Get-Together",
+        "tag": "Education",
+        "emoji": "📚",
+        "minutes": "",
+        "minutesLabel": ""
+      }
+    ],
+    "agm": [
+      {
+        "title": "AGM 2026",
+        "date": "June 2026",
+        "file": "https://singaporeans.ch/wp-content/uploads/2026/06/tcs-agm-june-2026.pdf"
+      },
+      {
+        "title": "AGM 2025",
+        "date": "May 2025",
+        "file": "https://singaporeans.ch/wp-content/uploads/2025/05/agm2025_final_v2.pdf"
+      },
+      {
+        "title": "AGM 2024",
+        "date": "",
+        "file": "https://singaporeans.ch/wp-content/uploads/2023/11/tcs-agm-2024.pdf"
+      }
+    ],
+    "carousel": [
+      {
+        "photo": "assets/hero-1.webp",
+        "title": "National Day Celebration",
+        "date": "Aug 24, 2021"
+      },
+      {
+        "photo": "assets/hero-4.webp",
+        "title": "National Day Lunch",
+        "date": "Aug 12, 2023"
+      },
+      {
+        "photo": "assets/hero-5.webp",
+        "title": "Community Dinner",
+        "date": "Nov 9, 2024"
+      },
+      {
+        "photo": "assets/hero-6.webp",
+        "title": "Community Meet-up",
+        "date": "Mar 15, 2025"
+      }
+    ],
+    "eventPhotos": [
+      {
+        "type": "National Day",
+        "emoji": "🇸🇬",
+        "photo": "assets/events-strip-1.png"
+      },
+      {
+        "type": "National Day",
+        "emoji": "",
+        "photo": "assets/events-strip-2.png"
+      },
+      {
+        "type": "National Day",
+        "emoji": "",
+        "photo": "assets/hero-5.webp"
+      },
+      {
+        "type": "National Day",
+        "emoji": "",
+        "photo": "assets/hero-6.webp"
+      },
+      {
+        "type": "Chinese New Year",
+        "emoji": "🧧",
+        "photo": "assets/placeholder-cny-1.svg"
+      },
+      {
+        "type": "Chinese New Year",
+        "emoji": "",
+        "photo": "assets/placeholder-cny-2.svg"
+      },
+      {
+        "type": "Chinese New Year",
+        "emoji": "",
+        "photo": "assets/placeholder-cny-3.svg"
+      },
+      {
+        "type": "Chinese New Year",
+        "emoji": "",
+        "photo": "assets/placeholder-cny-4.svg"
+      },
+      {
+        "type": "Ski trips",
+        "emoji": "🎿",
+        "photo": "assets/placeholder-ski-1.svg"
+      },
+      {
+        "type": "Ski trips",
+        "emoji": "",
+        "photo": "assets/placeholder-ski-2.svg"
+      },
+      {
+        "type": "Ski trips",
+        "emoji": "",
+        "photo": "assets/placeholder-ski-3.svg"
+      },
+      {
+        "type": "Ski trips",
+        "emoji": "",
+        "photo": "assets/placeholder-ski-4.svg"
+      },
+      {
+        "type": "Hiking",
+        "emoji": "🥾",
+        "photo": "assets/placeholder-hiking-1.svg"
+      },
+      {
+        "type": "Hiking",
+        "emoji": "",
+        "photo": "assets/placeholder-hiking-2.svg"
+      },
+      {
+        "type": "Hiking",
+        "emoji": "",
+        "photo": "assets/placeholder-hiking-3.svg"
+      },
+      {
+        "type": "Hiking",
+        "emoji": "",
+        "photo": "assets/placeholder-hiking-4.svg"
+      }
+    ],
+    "partners": [
+      {
+        "kind": "Quote",
+        "label": "Ambassador Tan Hung Seng",
+        "subtitle": "TCS Honorary Advisor\nPermanent Representative of Singapore\nWorld Trade Organization and World Intellectual Property Organization",
+        "text": "“The Temasek Club Switzerland (TCS) plays an extremely important role in helping overseas Singaporeans in Switzerland to stay connected to one another and to Singapore.\n\nTCS has done very well in organising a range of meaningful events and activities that enable Singaporeans to get to know each other, to support each other, and to create a home away from home.\n\nThe Singapore Mission in Geneva is pleased to support TCS in its efforts to foster a greater sense of belonging to our Little Red Dot.”",
+        "photo": "assets/ambassador.png",
+        "url": ""
+      },
+      {
+        "kind": "Link",
+        "label": "Permanent Mission of Singapore in Geneva",
+        "subtitle": "",
+        "text": "",
+        "photo": "",
+        "url": "https://www.mfa.gov.sg/overseas-mission/geneva-wto"
+      },
+      {
+        "kind": "Link",
+        "label": "Singapore Global Network (SGN)",
+        "subtitle": "",
+        "text": "",
+        "photo": "",
+        "url": "https://singaporeglobalnetwork.gov.sg/"
+      },
+      {
+        "kind": "Link",
+        "label": "France-Singapore Students and Young Professionals Association (FSSYPA)",
+        "subtitle": "",
+        "text": "",
+        "photo": "",
+        "url": "https://www.facebook.com/groups/FSSYPA"
+      }
+    ],
+    "about": [
+      {
+        "section": "Intro",
+        "heading": "",
+        "text": "Founded in 2001, Temasek Club Switzerland (TCS) is a **non-profit, non-governmental organisation managed by Singaporeans living in Switzerland**. Membership is open to all Singaporeans and friends of Singapore who are presently residing or previously resided in Switzerland."
+      },
+      {
+        "section": "Vision",
+        "heading": "",
+        "text": "To be the cornerstone for Singaporeans in Switzerland, fostering a vibrant and connected community that embodies the Singapore Spirit through social, educational and professional exchanges, and global engagement."
+      },
+      {
+        "section": "Mission",
+        "heading": "",
+        "text": "TCS strives to build and sustain a dynamic network for Singaporeans and friends of Singapore in Switzerland, offering enriching cultural experiences, robust educational support, professional development opportunities, and fostering connections with international friends and organisations."
+      },
+      {
+        "section": "Strategy",
+        "heading": "Cultivating the Singapore Spirit",
+        "text": "TCS strives to represent, cultivate, and sustain the “Singapore Spirit” in Switzerland by initiating and maintaining relationships with Singaporeans currently living or who have previously resided in Switzerland. We aim to foster a sense of community and connection so that everyone feels at home, no matter how far they are from Singapore."
+      },
+      {
+        "section": "Intro",
+        "heading": "",
+        "text": "For over two decades, TCS has been serving the Singapore community in Switzerland. Our community has grown and evolved, offering numerous events and initiatives to connect and support our members. TCS is supported by the Permanent Mission of Singapore in Geneva and the Singapore Global Network."
+      },
+      {
+        "section": "Strategy",
+        "heading": "Strengthening the Singaporean Identity",
+        "text": "TCS hopes to strengthen the Singaporean identity in Switzerland and the broader European neighbourhood by keeping in touch with overseas Singaporeans and organising relevant activities. Our events and initiatives are designed to celebrate our culture, heritage, and shared experiences, reinforcing a strong sense of belonging and national pride."
+      },
+      {
+        "section": "Strategy",
+        "heading": "Supporting SGN and Collaborative Platforms",
+        "text": "TCS coordinates with and supports the Singapore Global Network (SGN) and other communities to facilitate information exchange, engage in meaningful dialogue, and participate in joint projects. Our collaboration aims to create a cohesive and supportive network for all Singaporeans in Switzerland."
+      },
+      {
+        "section": "Strategy",
+        "heading": "Focused on Four Pillars",
+        "text": "Community, Education, Professional, and International Organizations"
+      }
+    ],
+    "lifeTips": [
+      {
+        "topic": "Intro",
+        "heading": "",
+        "text": "It takes time to adapt to a new place, and you are not alone—please reach out to the community for support! Below are some basic tips for getting acquainted with Switzerland."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Three levels of tax",
+        "text": "Income is taxed at the federal, cantonal, and municipal levels. Total tax varies a lot depending on where you live (e.g. Zug and Schwyz are generally lower, while Geneva and Vaud are higher)."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Withholding at source",
+        "text": "If you hold a B permit (and aren't yet a C permit holder or Swiss citizen), tax is typically deducted directly from your salary. The rate depends on your canton, marital status, children, and sometimes religion."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "When you file a return",
+        "text": "Higher earners (roughly above CHF 120,000 gross per year) are usually required to file an ordinary tax return even if taxed at source. Others may be able to request one, which can be worthwhile if they have deductions to claim. C permit holders and citizens file annually."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Filing deadlines",
+        "text": "The tax year is the calendar year, and returns are commonly due around 31 March, though this varies by canton, and extensions are usually available."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Wealth tax",
+        "text": "Unlike Singapore, Switzerland levies an annual cantonal tax on net wealth, and you generally need to declare worldwide assets, including Singapore bank accounts, investments, and property."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Church tax",
+        "text": "In many cantons, this applies if you register as a member of a recognised church. Singaporeans of other or no religion typically aren't affected, but make sure your registration is accurate."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Deductions",
+        "text": "Contributions to the Pillar 3a private pension, certain pension fund buy-ins, health insurance premiums (within limits), and commuting costs are commonly deductible."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Capital gains",
+        "text": "Gains on private investments are generally not taxed, though dividends, interest, and rental income are."
+      },
+      {
+        "topic": "Taxes",
+        "heading": "Double taxation",
+        "text": "Singapore and Switzerland have a double taxation agreement, which helps avoid being taxed twice on the same income. It's also worth checking your Singapore tax residency status with IRAS when you move."
+      },
+      {
+        "topic": "Recycling",
+        "heading": "Coming soon",
+        "text": "Tips on recycling are coming soon."
+      },
+      {
+        "topic": "Cultural Norms",
+        "heading": "Coming soon",
+        "text": "Tips on cultural norms are coming soon."
+      }
+    ],
+    "settings": {
+      "instagram": "https://www.instagram.com/temasekclubswitzerland/",
+      "facebook": "https://www.facebook.com/groups/TemasekClubSwitzerland",
+      "linkedin": "https://www.linkedin.com/company/temasek-club-switzerland/",
+      "life_photo_1": "assets/life-lucerne.jpg",
+      "life_photo_2": "assets/life-rack-railway.png",
+      "join_home": "**Ideas:** Volunteer, organize activities, spread the word about your business, share suggestions",
+      "join_events": "**Volunteer, organize an activity, or share suggestions**",
+      "join_team": "**Join the team**",
+      "join_sponsors": "**Support our initiatives**",
+      "join_life": "**Ideas:** Volunteer, organize activities, spread the word about your business, share suggestions",
+      "join_local": "**Spread the word about your business**"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Life in Switzerland — Temasek Club Switzerland</title>
+  <meta name="description" content="Helpful information for Singaporeans living in Switzerland: taxes, recycling and cultural norms.">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="config.js?v=20261193"></script>
+  <script src="content-loader.js?v=20261193"></script>
+  <link rel="stylesheet" href="styles.css?v=20261193">
+</head>
+<body data-page="life">
+  <div class="page">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <clipPath id="clip-flag" clipPathUnits="objectBoundingBox"><path d="M0.0083,0.2591 Q0.0077,0.2428 0.0291,0.2424 L0.9508,0.2259 Q0.9722,0.2255 0.9727,0.2418 L0.9877,0.7090 Q0.9882,0.7253 0.9668,0.7256 L0.0452,0.7421 Q0.0238,0.7425 0.0233,0.7263 Z"/></clipPath>
+      <clipPath id="clip-bunting-d" clipPathUnits="objectBoundingBox"><path d="M0.0286,0.0781 Q0.0295,0.0493 0.0542,0.0504 L0.9690,0.0886 Q0.9937,0.0896 0.9928,0.1184 L1,1 L0,1 Z"/></clipPath>
+      <clipPath id="clip-bunting-m" clipPathUnits="objectBoundingBox"><path d="M0.0244,0.2139 Q0.0253,0.1852 0.0500,0.1862 L0.9647,0.2244 Q0.9895,0.2255 0.9886,0.2542 L1,1 L0,1 Z"/></clipPath>
+    </defs>
+  </svg>
+    <!-- Header (node 0:7) -->
+    <header class="header">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.webp" alt="">
+        <span class="brand__name">Temasek Club<br>Switzerland</span>
+      </a>
+
+      <div class="header__sheet" id="header-sheet">
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="events.html">Events</a>
+        <button class="nav__link nav__trigger" type="button" data-menu="integration" aria-expanded="false" aria-controls="menu-integration">Integration <img src="assets/chevron.svg" alt=""></button>
+        <a class="nav__link nav__trigger" href="about.html" data-menu="about" aria-expanded="false" aria-controls="menu-about">About Us <img src="assets/chevron.svg" alt=""></a>
+      </nav>
+
+      <!-- Expanding menu panels -->
+      <div class="menu" id="menu-integration" data-menu="integration">
+        <div class="menu__inner">
+          <ul class="menu__options">
+            <li><a href="life-in-switzerland.html">Life in Switzerland</a></li>
+            <li><a href="local-businesses.html">Local Businesses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu" id="menu-about" data-menu="about">
+        <div class="menu__inner">
+          <ul class="menu__options">
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="agm.html">Annual General Meeting Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-overlay" aria-hidden="true"></div>
+        <!-- mobile only: social links and the contact button live in the menu sheet -->
+        <div class="sheet__socials">
+          <a href="https://www.instagram.com/temasekclubswitzerland/" aria-label="Instagram" target="_blank" rel="noopener"><img src="assets/icon-instagram.svg" alt=""></a>
+          <a href="https://www.facebook.com/groups/TemasekClubSwitzerland" aria-label="Facebook" target="_blank" rel="noopener"><img src="assets/icon-facebook.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/temasek-club-switzerland/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="assets/icon-linkedin.svg" alt=""></a>
+        </div>
+        <a class="btn sheet__cta" href="#join">Contact us</a>
+      </div>
+
+      <div class="header__right">
+        <div class="socials">
+          <a href="https://www.instagram.com/temasekclubswitzerland/" aria-label="Instagram" target="_blank" rel="noopener" aria-describedby="tip-instagram"><img src="assets/icon-instagram.svg" alt=""><span class="tip" role="tooltip" id="tip-instagram">Event highlights, behind-the-scenes content, and stories</span></a>
+          <a href="https://www.facebook.com/groups/TemasekClubSwitzerland" aria-label="Facebook" target="_blank" rel="noopener" aria-describedby="tip-facebook"><img src="assets/icon-facebook.svg" alt=""><span class="tip" role="tooltip" id="tip-facebook">Event updates, community news, and announcements</span></a>
+          <a href="https://www.linkedin.com/company/temasek-club-switzerland/" aria-label="LinkedIn" target="_blank" rel="noopener" aria-describedby="tip-linkedin"><img src="assets/icon-linkedin.svg" alt=""><span class="tip" role="tooltip" id="tip-linkedin">Professional networking opportunities, career-related news, and initiative updates</span></a>
+        </div>
+        <a class="btn" href="#join">Contact us</a>
+        <div class="hop" aria-hidden="true"><img class="hop__flag hop__sg" src="assets/flag-sg.svg" alt=""><img class="hop__flag hop__ch" src="assets/flag-ch.svg" alt=""></div>
+        <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="header-sheet"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="life-intro">
+        <h1 class="section-title">Life in Switzerland</h1>
+        <div class="life-photos" data-tcs>
+          <img class="life-photos__a" src="assets/life-lucerne.jpg" alt="">
+          <div class="life-photos__b"><img src="assets/life-rack-railway.png" alt=""></div>
+        </div>
+        <p class="life-intro__text" data-tcs>It takes time to adapt to a new place, and you are not alone—please reach out to the community for support! Below are some basic tips for getting acquainted with Switzerland.</p>
+      </section>
+
+      <section class="info">
+        <h2 class="section-title">Helpful Information</h2>
+        <div class="info__panel" data-tcs>
+          <div class="chips" role="tablist" aria-label="Topics">
+            <button class="chip chip--active" role="tab" type="button" data-topic="taxes" aria-selected="true">Taxes</button>
+            <button class="chip" role="tab" type="button" data-topic="recycling" aria-selected="false">Recycling</button>
+            <button class="chip" role="tab" type="button" data-topic="culture" aria-selected="false">Cultural Norms</button>
+          </div>
+          <ul class="info__list" data-topic="taxes" role="tabpanel">
+            <li><strong>Three levels of tax</strong><br>Income is taxed at the federal, cantonal, and municipal levels. Total tax varies a lot depending on where you live (e.g. Zug and Schwyz are generally lower, while Geneva and Vaud are higher).</li>
+            <li><strong>Withholding at source</strong><br>If you hold a B permit (and aren't yet a C permit holder or Swiss citizen), tax is typically deducted directly from your salary. The rate depends on your canton, marital status, children, and sometimes religion.</li>
+            <li><strong>When you file a return</strong><br>Higher earners (roughly above CHF 120,000 gross per year) are usually required to file an ordinary tax return even if taxed at source. Others may be able to request one, which can be worthwhile if they have deductions to claim. C permit holders and citizens file annually.</li>
+            <li><strong>Filing deadlines</strong><br>The tax year is the calendar year, and returns are commonly due around 31 March, though this varies by canton, and extensions are usually available.</li>
+            <li><strong>Wealth tax</strong><br>Unlike Singapore, Switzerland levies an annual cantonal tax on net wealth, and you generally need to declare worldwide assets, including Singapore bank accounts, investments, and property.</li>
+            <li><strong>Church tax</strong><br>In many cantons, this applies if you register as a member of a recognised church. Singaporeans of other or no religion typically aren't affected, but make sure your registration is accurate.</li>
+            <li><strong>Deductions</strong><br>Contributions to the Pillar 3a private pension, certain pension fund buy-ins, health insurance premiums (within limits), and commuting costs are commonly deductible.</li>
+            <li><strong>Capital gains</strong><br>Gains on private investments are generally not taxed, though dividends, interest, and rental income are.</li>
+            <li><strong>Double taxation</strong><br>Singapore and Switzerland have a double taxation agreement, which helps avoid being taxed twice on the same income. It's also worth checking your Singapore tax residency status with IRAS when you move.</li>
+          </ul>
+          <p class="info__list info__list--empty" data-topic="recycling" role="tabpanel" hidden>Tips on recycling are coming soon.</p>
+          <p class="info__list info__list--empty" data-topic="culture" role="tabpanel" hidden>Tips on cultural norms are coming soon.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Join us (node 0:106) -->
+    <section class="join" id="join">
+      <div class="join__inner">
+
+        <!-- photo collage sits below the panel (first in layer order) -->
+        <div class="collage" aria-hidden="true">
+          <div class="collage__item collage__item--12"><img src="assets/collage-9.png" alt=""></div>
+          <div class="collage__item collage__item--10"><img src="assets/collage-8.png" alt=""></div>
+          <div class="collage__item collage__item--8"><img src="assets/collage-12.png" alt=""></div>
+          <div class="collage__item collage__item--9"><img src="assets/collage-10.png" alt=""></div>
+        </div>
+
+        <h2 class="section-title join__title">Join us</h2>
+
+        <form class="join__panel" action="#" method="post">
+          <p class="join__ideas" data-tcs><strong>Ideas:</strong> Volunteer, organize activities, spread the word about your business, share suggestions</p>
+
+          <div class="join__fields">
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" required>
+            </label>
+            <label class="field field--message">
+              <span>Message</span>
+              <textarea name="message" required></textarea>
+            </label>
+          </div>
+
+          <button class="btn join__send" type="submit">Send</button>
+
+          <div class="join__orchid"><img src="assets/orchid.png" alt=""></div>
+        </form>
+      </div>
+    </section>
+
+  </div>
+  <script src="life.js?v=20261193"></script>
+  <script src="nav.js?v=20261193"></script>
+  <script src="button-wave.js?v=20261193"></script>
+  <script src="form.js?v=20261193"></script>
+  <script src="scroll-reveal.js?v=20261193"></script>
+  <script src="content-render.js?v=20261193"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us — Temasek Club Switzerland</title>
+  <meta name="description" content="About Temasek Club Switzerland: our vision, mission and strategy.">
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="config.js?v=20261193"></script>
+  <script src="content-loader.js?v=20261193"></script>
+  <link rel="stylesheet" href="styles.css?v=20261193">
+</head>
+<body data-page="about">
+  <div class="page page--about">
+    <!-- decorative photos, behind the content -->
+    <img class="about__deco about__deco--train" src="assets/about-train.png" alt="">
+    <img class="about__deco about__deco--greenhouse" src="assets/about-greenhouse.png" alt="">
+
+    <!-- Header (node 0:7) -->
+    <header class="header">
+      <a class="brand" href="index.html">
+        <img class="brand__logo" src="assets/logo.webp" alt="">
+        <span class="brand__name">Temasek Club<br>Switzerland</span>
+      </a>
+
+      <div class="header__sheet" id="header-sheet">
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="events.html">Events</a>
+        <button class="nav__link nav__trigger" type="button" data-menu="integration" aria-expanded="false" aria-controls="menu-integration">Integration <img src="assets/chevron.svg" alt=""></button>
+        <a class="nav__link nav__trigger" href="about.html" data-menu="about" aria-expanded="false" aria-controls="menu-about">About Us <img src="assets/chevron.svg" alt=""></a>
+      </nav>
+
+      <!-- Expanding menu panels -->
+      <div class="menu" id="menu-integration" data-menu="integration">
+        <div class="menu__inner">
+          <ul class="menu__options">
+            <li><a href="life-in-switzerland.html">Life in Switzerland</a></li>
+            <li><a href="local-businesses.html">Local Businesses</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu" id="menu-about" data-menu="about">
+        <div class="menu__inner">
+          <ul class="menu__options">
+            <li><a href="team.html">Team</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="agm.html">Annual General Meeting Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-overlay" aria-hidden="true"></div>
+        <!-- mobile only: social links and the contact button live in the menu sheet -->
+        <div class="sheet__socials">
+          <a href="https://www.instagram.com/temasekclubswitzerland/" aria-label="Instagram" target="_blank" rel="noopener"><img src="assets/icon-instagram.svg" alt=""></a>
+          <a href="https://www.facebook.com/groups/TemasekClubSwitzerland" aria-label="Facebook" target="_blank" rel="noopener"><img src="assets/icon-facebook.svg" alt=""></a>
+          <a href="https://www.linkedin.com/company/temasek-club-switzerland/" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="assets/icon-linkedin.svg" alt=""></a>
+        </div>
+        <a class="btn sheet__cta" href="index.html#join">Contact us</a>
+      </div>
+
+      <div class="header__right">
+        <div class="socials">
+          <a href="https://www.instagram.com/temasekclubswitzerland/" aria-label="Instagram" target="_blank" rel="noopener" aria-describedby="tip-instagram"><img src="assets/icon-instagram.svg" alt=""><span class="tip" role="tooltip" id="tip-instagram">Event highlights, behind-the-scenes content, and stories</span></a>
+          <a href="https://www.facebook.com/groups/TemasekClubSwitzerland" aria-label="Facebook" target="_blank" rel="noopener" aria-describedby="tip-facebook"><img src="assets/icon-facebook.svg" alt=""><span class="tip" role="tooltip" id="tip-facebook">Event updates, community news, and announcements</span></a>
+          <a href="https://www.linkedin.com/company/temasek-club-switzerland/" aria-label="LinkedIn" target="_blank" rel="noopener" aria-describedby="tip-linkedin"><img src="assets/icon-linkedin.svg" alt=""><span class="tip" role="tooltip" id="tip-linkedin">Professional networking opportunities, career-related news, and initiative updates</span></a>
+        </div>
+        <a class="btn" href="index.html#join">Contact us</a>
+        <div class="hop" aria-hidden="true"><img class="hop__flag hop__sg" src="assets/flag-sg.svg" alt=""><img class="hop__flag hop__ch" src="assets/flag-ch.svg" alt=""></div>
+        <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="header-sheet"><span></span><span></span></button>
+      </div>
+    </header>
+
+    <main class="main main--about">
+
+      <section class="about-intro">
+        <h1 class="section-title">About Us</h1>
+        <div class="about-intro__text" data-tcs>
+          <p>Founded in 2001, Temasek Club Switzerland (TCS) is a <strong>non-profit, non-governmental organisation managed by Singaporeans living in Switzerland</strong>. Membership is open to all Singaporeans and friends of Singapore who are presently residing or previously resided in Switzerland.</p>
+          <p>For over two decades, TCS has been serving the Singapore community in Switzerland. Our community has grown and evolved, offering numerous events and initiatives to connect and support our members. TCS is supported by the Permanent Mission of Singapore in Geneva and the Singapore Global Network.</p>
+        </div>
+      </section>
+
+      <section class="about-panel" data-tcs>
+        <article class="about-card" data-about="vision">
+          <h2>Vision</h2>
+          <p>To be the cornerstone for Singaporeans in Switzerland, fostering a vibrant and connected community that embodies the Singapore Spirit through social, educational and professional exchanges, and global engagement.</p>
+        </article>
+        <article class="about-card" data-about="mission">
+          <h2>Mission</h2>
+          <p>TCS strives to build and sustain a dynamic network for Singaporeans and friends of Singapore in Switzerland, offering enriching cultural experiences, robust educational support, professional development opportunities, and fostering connections with international friends and organisations.</p>
+        </article>
+        <article class="about-card about-card--strategy" data-about="strategy">
+          <h2>Strategy</h2>
+          <div class="strategy__item">
+            <h4>Cultivating the Singapore Spirit</h4>
+            <p>TCS strives to represent, cultivate, and sustain the “Singapore Spirit” in Switzerland by initiating and maintaining relationships with Singaporeans currently living or who have previously resided in Switzerland. We aim to foster a sense of community and connection so that everyone feels at home, no matter how far they are from Singapore.</p>
+          </div>
+          <div class="strategy__item">
+            <h4>Strengthening the Singaporean Identity</h4>
+            <p>TCS hopes to strengthen the Singaporean identity in Switzerland and the broader European neighbourhood by keeping in touch with overseas Singaporeans and organising relevant activities. Our events and initiatives are designed to celebrate our culture, heritage, and shared experiences, reinforcing a strong sense of belonging and national pride.</p>
+          </div>
+          <div class="strategy__item">
+            <h4>Supporting SGN and Collaborative Platforms</h4>
+            <p>TCS coordinates with and supports the Singapore Global Network (SGN) and other communities to facilitate information exchange, engage in meaningful dialogue, and participate in joint projects. Our collaboration aims to create a cohesive and supportive network for all Singaporeans in Switzerland.</p>
+          </div>
+          <div class="strategy__item">
+            <h4>Focused on Four Pillars</h4>
+            <p>Community, Education, Professional, and International Organizations</p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+  <script src="nav.js?v=20261193"></script>
+  <script src="button-wave.js?v=20261193"></script>
+  <script src="form.js?v=20261193"></script>
+  <script src="pillars.js?v=20261193"></script>
+  <script src="scroll-reveal.js?v=20261193"></script>
+  <script src="content-render.js?v=20261193"></script>
+</body>
+</html>
